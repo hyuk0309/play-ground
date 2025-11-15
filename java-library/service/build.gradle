@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation project(':mylibrary')
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.example.service.App'
+        )
+    }
+}
