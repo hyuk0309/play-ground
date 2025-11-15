@@ -1,10 +1,12 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
 dependencies {
-    api project(':internallibrary')
+//    api project(':internallibrary')
 //    implementation project(':internallibrary')
+    api "com.example:internallibrary:0.1.0-SNAPSHOT"
 
     // 외부 의존성 예시: Apache Commons Lang
     implementation 'org.apache.commons:commons-lang3:3.18.0'
@@ -16,4 +18,23 @@ dependencies {
 java {
     withJavadocJar()
     withSourcesJar()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            name = "companyNexus"
+            url = uri("https://nexus.company.com/repository/maven-releases/")
+            credentials {
+                username = findProperty("repoUser") ?: System.getenv("REPO_USER")
+                password = findProperty("repoPassword") ?: System.getenv("REPO_PASSWORD")
+            }
+        }
+    }
 }

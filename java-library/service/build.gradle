@@ -3,7 +3,8 @@ plugins {
 }
 
 dependencies {
-    implementation project(':mylibrary-starter')
+//    implementation project(':mylibrary-starter')
+    implementation 'com.example:mylibrary-starter:0.1.0-SNAPSHOT'
 }
 
 jar {
