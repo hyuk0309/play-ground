@@ -1,0 +1,11 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation project(':mylibrary')
+}
+
+application {
+    mainClass = 'com.example.service.App'
+}

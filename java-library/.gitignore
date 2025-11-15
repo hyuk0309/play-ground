@@ -1,0 +1,60 @@
+# -----------------------------
+# General OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Java
+# -----------------------------
+*.class
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# -----------------------------
+# Gradle
+# -----------------------------
+.gradle/
+**/build/
+
+# Keep Gradle wrapper scripts and metadata
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# -----------------------------
+# IDEs
+# -----------------------------
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+**/out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# -----------------------------
+# Misc
+# -----------------------------
+logs/
+tmp/
+*.swp
+*.swo
