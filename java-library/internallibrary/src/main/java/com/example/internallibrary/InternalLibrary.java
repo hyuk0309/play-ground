@@ -5,9 +5,9 @@ import java.util.Objects;
 /**
  * 내부 유틸리티 라이브러리 예시 클래스.
  */
-public final class StringUtils {
+public final class InternalLibrary {
 
-    private StringUtils() {}
+    private InternalLibrary() {}
 
     /**
      * 주어진 문자열의 첫 글자를 대문자로 변환합니다. null 또는 빈 문자열이면 그대로 반환합니다.
@@ -24,4 +24,6 @@ public final class StringUtils {
     public static String safeTrim(String input) {
         return Objects.toString(input, "").trim();
     }
+
+	public record Name(String name) { }
 }
