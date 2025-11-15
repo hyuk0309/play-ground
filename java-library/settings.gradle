@@ -3,5 +3,6 @@ rootProject.name = "java-library"
 include(
         ":internallibrary",
         ":mylibrary",
-        ":service"
+        ":service",
+        ":mylibrary-starter"
 )
