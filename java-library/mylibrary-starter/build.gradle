@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    // starter는 mylibrary를 포함하고, 외부 의존성도 재노출(api)합니다.
+    api project(':mylibrary')
+    // mylibrary에서 사용한 외부 의존성까지 starter에 포함(재노출)
+    implementation 'org.apache.commons:commons-lang3:3.18.0'
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}

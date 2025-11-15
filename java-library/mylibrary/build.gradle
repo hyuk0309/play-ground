@@ -6,6 +6,9 @@ dependencies {
     api project(':internallibrary')
 //    implementation project(':internallibrary')
 
+    // 외부 의존성 예시: Apache Commons Lang
+    implementation 'org.apache.commons:commons-lang3:3.18.0'
+
     testImplementation platform('org.junit:junit-bom:5.11.3')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }

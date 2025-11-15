@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation project(':mylibrary')
+    implementation project(':mylibrary-starter')
 }
 
 jar {
