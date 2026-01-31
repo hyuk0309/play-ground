@@ -1,0 +1,22 @@
+# Gradle files
+.gradle/
+build/
+out/
+bin/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse files
+.settings/
+.classpath
+.project
+
+# Mac OS
+.DS_Store
+
+# Benchmarks
+/result.txt
