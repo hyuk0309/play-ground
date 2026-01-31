@@ -1,0 +1,6 @@
+JMH S 36 com.example.benchmark.CacheBenchmark S 71 com.example.benchmark.jmh_generated.CacheBenchmark_readCaffeine_jmhTest S 12 readCaffeine S 10 Throughput I 1 4 A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 36 com.example.benchmark.CacheBenchmark S 70 com.example.benchmark.jmh_generated.CacheBenchmark_readEhcache_jmhTest S 11 readEhcache S 10 Throughput I 1 4 A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 36 com.example.benchmark.CacheBenchmark S 68 com.example.benchmark.jmh_generated.CacheBenchmark_readGuava_jmhTest S 9 readGuava S 10 Throughput I 1 4 A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 36 com.example.benchmark.CacheBenchmark S 72 com.example.benchmark.jmh_generated.CacheBenchmark_writeCaffeine_jmhTest S 13 writeCaffeine S 10 Throughput I 1 4 A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 36 com.example.benchmark.CacheBenchmark S 71 com.example.benchmark.jmh_generated.CacheBenchmark_writeEhcache_jmhTest S 12 writeEhcache S 10 Throughput I 1 4 A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 36 com.example.benchmark.CacheBenchmark S 69 com.example.benchmark.jmh_generated.CacheBenchmark_writeGuava_jmhTest S 10 writeGuava S 10 Throughput I 1 4 A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
