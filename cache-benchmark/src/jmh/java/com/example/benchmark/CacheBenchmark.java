@@ -9,6 +9,10 @@ import org.ehcache.config.builders.CacheManagerBuilder;
 import org.ehcache.config.builders.ResourcePoolsBuilder;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
@@ -112,5 +116,17 @@ public class CacheBenchmark {
     public void writeEhcache() {
         int key = ThreadLocalRandom.current().nextInt(CACHE_SIZE * 2);
         ehcache.put(key, "Value-" + key);
+    }
+
+    // 디버깅을 위한 Main 메서드
+    public static void main(String[] args) throws RunnerException {
+        Options opt = new OptionsBuilder()
+                .include(CacheBenchmark.class.getSimpleName())
+                .forks(0) // 디버깅을 위해 필수 (0 = 현재 프로세스에서 실행)
+                .warmupIterations(0) // 빠른 디버깅을 위해 Warmup 제거
+                .measurementIterations(1) // 빠른 디버깅을 위해 1회만 실행
+                .build();
+
+        new Runner(opt).run();
     }
 }

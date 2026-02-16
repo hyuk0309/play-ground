@@ -19,6 +19,9 @@ dependencies {
     jmh("com.github.ben-manes.caffeine:caffeine:3.1.8")
     jmh("org.ehcache:ehcache:3.10.8")
     jmh("com.google.guava:guava:33.0.0-jre")
+
+    // Annotation Processor for IntelliJ Support
+    jmhAnnotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:1.37")
     
     // Logging for Ehcache (optional but good to silence slf4j warnings if needed)
     jmh("org.slf4j:slf4j-simple:2.0.9")
